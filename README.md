@@ -1,5 +1,6 @@
 # cytosmarter
-Smart cell culture camera
+
+![alt text](logo.png)
 
 The aim of this project is to develop a cheap microscope camera that tracks growth of cell cultures.
 
