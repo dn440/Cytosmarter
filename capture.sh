@@ -5,6 +5,7 @@
 ########################################################################
 IMGDIR="/home/pi/Pictures/"
 CODEDIR="/home/pi/cytosmarter/"
+usb="~/hub-ctrl.c/hub-ctrl"
 
 ########################################################################
 # example code
@@ -23,10 +24,10 @@ CODEDIR="/home/pi/cytosmarter/"
 python "${CODEDIR}LED-on.py"
 
 # turn USB hub on
-# sudo hub-ctrl -h 0 -P 2 -p 1
+sudo ~/hub-ctrl.c/hub-ctrl -h 0 -P 2 -p 1
 
 # wait for USB devices to boot
-# sleep 15
+sleep 15
 
 # capture image
 fswebcam -d /dev/video0 -p YUYV -r 1600x1200 "$IMGDIR$(date +\%Y-\%m-\%d-\%k\%M).jpeg"
@@ -35,4 +36,5 @@ fswebcam -d /dev/video0 -p YUYV -r 1600x1200 "$IMGDIR$(date +\%Y-\%m-\%d-\%k\%M)
 python "${CODEDIR}LED-off.py"
 
 # turn USB hub off
-# sudo hub-ctrl -h 0 -P 2 -p 0
+sudo ~/hub-ctrl.c/hub-ctrl -h 0 -P 2 -p 0
+
