@@ -8,7 +8,7 @@ Camera: [National Geographic 20x/200x USB-Microscoop](https://bresser-online.nl/
 
 Computer: [Raspberry Pi 3 B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
 
-# software used
+## dependencies
 
 - python (GPIO control, image processing)
 - hub-ctrl (switching USB connections on/off)
