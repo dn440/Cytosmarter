@@ -21,3 +21,7 @@ Computer: [Raspberry Pi 3 B+](https://www.raspberrypi.org/products/raspberry-pi-
 - write script that calculates confluency (python? imageJ is pain)
 - write app to monitor growth remotely
 - send message (telegram) when ready to split
+
+## results
+
+- ?? mAh powerbank lasted 16 hours when imaging every 10 min
