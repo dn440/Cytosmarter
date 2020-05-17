@@ -15,6 +15,7 @@ Computer: [Raspberry Pi 3 B+](https://www.raspberrypi.org/products/raspberry-pi-
 - fswebcam (easy single image capture)
 - camorama (live view from webcam to set up focus)
 - crontab (schedule running code for timelapses)
+- rclone
 
 ## to do
 

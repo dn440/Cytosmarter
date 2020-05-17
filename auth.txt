@@ -1,0 +1,11 @@
+Client ID
+87815814644-j5ab3omh90cpq4ljb7m44kpmufkolrof.apps.googleusercontent.com
+
+Client Secret
+HOyyP3LyPBcgDOshZeoabLJh
+
+Your Client ID
+87815814644-0mpf9dmm0v6br1d76b0jpci0cqaeed0l.apps.googleusercontent.com
+
+Your Client Secret
+-hUUV_tbBX9BI1SQdgGVXAca
