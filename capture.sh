@@ -3,7 +3,7 @@
 ########################################################################
 # set up constants
 ########################################################################
-IMGDIR="/home/pi/Pictures/"
+IMGDIR="/home/pi/mnt/gdrive/"
 CODEDIR="/home/pi/cytosmarter/"
 usb="~/hub-ctrl.c/hub-ctrl"
 
