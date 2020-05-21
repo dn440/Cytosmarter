@@ -27,14 +27,25 @@ python "${CODEDIR}LED-on.py"
 sudo ~/hub-ctrl.c/hub-ctrl -h 0 -P 2 -p 1
 
 # wait for USB devices to boot
-sleep 15
+# sleep 15
 
 # capture image
-fswebcam -d /dev/video0 -p YUYV -r 1600x1200 "$IMGDIR$(date +\%Y-\%m-\%d-\%k\%M).jpeg"
+fswebcam -d v4l2:/dev/video0 --input 0 -p YUYV --delay 5 \
+	-r 1600x1200 "$IMGDIR$(date +\%Y-\%m-\%d-\%k\%M).jpeg" \
+	--set "Exposure, Auto"="Aperture Priority Mode" \
+	--set "White Balance Temperature, Auto"="False" \
+	--set "White Balance Temperature"="1%" \
+	--set "Brightness"="0%" \
+	--set "Gamma"="0%" \
+	--set "Backlight Compensation"="0"
+
+#	--set "Exposure, Auto"="Manual Mode" \
+#	--set "Exposure (Absolute)"="100%" \
+#	--set "White Balance Temperature, Auto"="True" \
 
 # turn LED off
 python "${CODEDIR}LED-off.py"
 
 # turn USB hub off
-sudo ~/hub-ctrl.c/hub-ctrl -h 0 -P 2 -p 0
+# sudo ~/hub-ctrl.c/hub-ctrl -h 0 -P 2 -p 0
 

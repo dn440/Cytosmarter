@@ -26,7 +26,7 @@ python "${CODEDIR}LED-on.py"
 # sleep 2
 
 # capture image
-fswebcam -d /dev/video0 -p YUYV -r 1600x1200 "${IMGDIR}test_$(date +\%Y-\%m-\%d-\%k\%M).jpeg"
+fswebcam -d /dev/video0 -p YUYV --delay 0 -r 1600x1200 "${IMGDIR}test_$(date +\%Y-\%m-\%d-\%k\%M).jpeg"
 
 # turn LED off
 python "${CODEDIR}LED-off.py"
