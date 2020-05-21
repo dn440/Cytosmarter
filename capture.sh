@@ -27,7 +27,7 @@ python "${CODEDIR}LED-on.py"
 sudo ~/hub-ctrl.c/hub-ctrl -h 0 -P 2 -p 1
 
 # wait for USB devices to boot
-# sleep 15
+sleep 15
 
 # capture image
 fswebcam -d v4l2:/dev/video0 --input 0 -p YUYV --delay 5 \
@@ -47,5 +47,5 @@ fswebcam -d v4l2:/dev/video0 --input 0 -p YUYV --delay 5 \
 python "${CODEDIR}LED-off.py"
 
 # turn USB hub off
-# sudo ~/hub-ctrl.c/hub-ctrl -h 0 -P 2 -p 0
+sudo ~/hub-ctrl.c/hub-ctrl -h 0 -P 2 -p 0
 
